@@ -1906,7 +1906,6 @@ E:AddToggle(
         end
     }
 )
-
 E:AddToggle(
     {
         Name = "Assist 1",
