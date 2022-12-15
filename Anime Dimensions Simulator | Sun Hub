@@ -1936,14 +1936,14 @@ E:AddToggle(
 E:AddToggle(
     {
         Name = "Assist 1",
-        Default = _G.Settings.AutoSkill6,
+        Default = _G.Settings.AutoSkill5,
         Callback = function(H)
-            _G.Settings.AutoSkill6 = H
+            _G.Settings.AutoSkill5 = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait(_G.Settings.skilldelay) do
-                        if not _G.Settings.AutoSkill6 then
+                        if not _G.Settings.AutoSkill5 then
                             break
                         end
                         for m, n in pairs(
@@ -1962,14 +1962,14 @@ E:AddToggle(
 E:AddToggle(
     {
         Name = "Assist 2",
-        Default = _G.Settings.AutoSkill7,
+        Default = _G.Settings.AutoSkill6,
         Callback = function(H)
-            _G.Settings.AutoSkill7 = H
+            _G.Settings.AutoSkill6 = H
             saveSettings()
             task.spawn(
                 function()
                     while task.wait(_G.Settings.skilldelay) do
-                        if not _G.Settings.AutoSkill7 then
+                        if not _G.Settings.AutoSkill6 then
                             break
                         end
                         for m, n in pairs(
