@@ -1908,6 +1908,33 @@ E:AddToggle(
 )
 E:AddToggle(
     {
+        Name = "skill 5 (awaken units)",
+        Default = _G.Settings.AutoSkill5,
+        Color = Color3.fromRGB(255,215,0),
+        Callback = function(H)
+            _G.Settings.AutoSkill5 = H
+            saveSettings()
+            task.spawn(
+                function()
+                    while task.wait(_G.Settings.skilldelay) do
+                        if not _G.Settings.AutoSkill5 then
+                            break
+                        end
+                        for m, n in pairs(
+                            getconnections(
+                                game.Players.LocalPlayer.PlayerGui.UniversalGui.UniversalCenterUIFrame.SlotsHolder.Skill5.MouseButton1Click
+                            )
+                        ) do
+                            n:Fire()
+                        end
+                    end
+                end
+            )
+        end
+    }
+)
+E:AddToggle(
+    {
         Name = "Assist 1",
         Default = _G.Settings.AutoSkill5,
         Callback = function(H)
