@@ -1,66 +1,6 @@
 if not game:IsLoaded() then
     game.Loaded:Wait()
 end
-_G.Settings = {
-    farmraidtoken = false,
-    skilldelay = false,
-    Raidselectmap = "None",
-    distance = 10,
-    toggleguikey = "z",
-    Hardcore = false,
-    afkandraid = false,
-    autospingem = false,
-    autoclaimrewardraid = false,
-    FriendsOnly = true,
-    eggspintime = "3",
-    autoclaimrewardspeed = false,
-    equipselectmain = false,
-    equipselectmain1 = false,
-    equipselectmain2 = false,
-    selectmain = "None",
-    selectmain1 = "None",
-    selectmain2 = "None",
-    autosellcommon = false,
-    autoselluncommon = false,
-    autosellrare = false,
-    autosellepic = false,
-    selectegg = "None",
-    autoselllegendary = false,
-    autoequipbest = false,
-    autoupgrade = false,
-    Height = 20,
-    Height1 = -20,
-    otherds = "@here",
-    dsuser = "Not Set",
-    AutoPunch = true,
-    punchdelay = "1.5",
-    custommapselect = "None",
-    webhookspeed = "6",
-    AutoFarm = false,
-    AutoTP = false,
-    AutoTP1 = false,
-    AutoTP2 = true,
-    CustomDifficulty = "None",
-    Autocustom = false,
-    AutoRetry = false,
-    webhookurl = "",
-    AutoSkill1 = true,
-    AutoSkill2 = true,
-    AutoSkill3 = true,
-    AutoSkill4 = true,
-    AutoSkill5 = true,
-    AutoSkill6 = true,
-    kickwebhook = false,
-    Speed = 80,
-    Hidename = false,
-    Autolvl = false,
-    Autospeedraid = false,
-    Autoboss = false,
-    webhook = false,
-    raidwebhook = false,
-    Autoraid = false,
-    kickrejoin = false
-}
 local a = "Hori Hub"
 local b = "AnimeDimension.lua"
 function saveSettings()
@@ -214,7 +154,7 @@ local r = {"Easy", "Hard", "Nightmare", "Infinite"}
 local s = {"Capsule Series 1", "Raid Capsule", "Gear 5 Fluffy Capsule", "Esper Capsule"}
 local t = { "Tengoku Raid", "Hirito Raid", "Titan Raid", "Chainsaw Raid" ,"Nardo Beast Raid","Cursed Sage Raid", "Christmas Raid","Combat Titan Raid", "Infinity Nojo Raid", "Gear 5 Fluffy Raid", "Roku Ultra Instinct Raid"}
 local u = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
-local v = u:MakeWindow({Name = "Bird Hub", HidePremium = true})
+local v = u:MakeWindow({Name = "Hori Hub", HidePremium = true})
 local w = v:MakeTab({Name = "Main", PremiumOnly = false})
 local x = v:MakeTab({Name = "Extra", PremiumOnly = false})
 local y = v:MakeTab({Name = "Setting", PremiumOnly = false})
