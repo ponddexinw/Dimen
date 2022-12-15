@@ -1,7 +1,7 @@
 if not game:IsLoaded() then
     game.Loaded:Wait()
 end
-local a = "Sun Hub"
+local a = "Jum Puk"
 local b = "AnimeDimension.lua"
 function saveSettings()
     local c = game:GetService("HttpService")
@@ -119,7 +119,24 @@ local p = {
     "Eugeo",
     "Gear 5 Luffy",
     "Esper",
-    "Astolfo Summer Character"
+    "Astolfo Summer Character",
+    "Chainsaw",
+    "Nardo (Beast)",
+    "Cursed Sage",
+    "Shadow Monarch",
+    "Shadow Red Emperor",
+    "Shadow Tengu",
+    "Shadow Esper",
+    "Shadow Infinity Nojo",
+    "Shadow Ramura",
+    "Shadow Esdeaf",
+    "Shadow Yomiichi",
+    "Shadow Combat Titan",
+    "Ichlnl (Flnal)",
+    "Control",
+    "Blood Flend",
+    "Prlmordlal",
+    "Roku Ultra Instinct"
 }
 local q = {
     "Infinite Mode",
@@ -130,13 +147,14 @@ local q = {
     "Sword Dimension",
     "Ghoul Dimension",
     "Fate Dimension",
-    "Slime Dimension"
+    "Slime Dimension",
+    "Devil Dimension"
 }
 local r = {"Easy", "Hard", "Nightmare", "Infinite"}
 local s = {"Capsule Series 1", "Raid Capsule", "Gear 5 Fluffy Capsule", "Esper Capsule"}
-local t = { "Tengoku Raid", "Hirito Raid", "Titan Raid", "Esper Raid" ,"Demon Lord Raid","Yomiichi Raid", "Christmas Raid","Combat Titan Raid", "Infinity Nojo Raid", "Gear 5 Fluffy Raid"}
+local t = { "Tengoku Raid", "Hirito Raid", "Titan Raid", "Chainsaw Raid" ,"Nardo Beast Raid","Cursed Sage Raid", "Christmas Raid","Combat Titan Raid", "Infinity Nojo Raid", "Gear 5 Fluffy Raid", "Roku Ultra Instinct Raid"}
 local u = loadstring(game:HttpGet("https://www.klgrth.io/paste/gs77p/raw"))()
-local v = u:MakeWindow({Name = "☀️ Sun Hub ☀️", HidePremium = true})
+local v = u:MakeWindow({Name = "☀️ Jum Puk ☀️", HidePremium = true})
 local w = v:MakeTab({Name = "Main", PremiumOnly = false})
 local x = v:MakeTab({Name = "Extra", PremiumOnly = false})
 local D = v:MakeTab({Name = "TP Method", PremiumOnly = false})
@@ -441,7 +459,7 @@ w:AddToggle(
                                 "TeleportPlayers"
                             )
                         end
-                        if Lvl > 105 then
+                        if Lvl > 105 and Lvl < 113 then
                             wait(1)
                             game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction:InvokeServer(
                                 "CreateRoom",
@@ -449,6 +467,36 @@ w:AddToggle(
                                     ["Difficulty"] = "Easy",
                                     ["FriendsOnly"] = _G.Settings.FriendsOnly,
                                     ["MapName"] = "Slime Dimension",
+                                    ["Hardcore"] = false
+                                }
+                            )
+                            game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction:InvokeServer(
+                                "TeleportPlayers"
+                            )
+                        end
+                        if Lvl > 112 and Lv1 < 121 then
+                            wait(1)
+                            game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction:InvokeServer(
+                                "CreateRoom",
+                                {
+                                    ["Difficulty"] = "Nightmare",
+                                    ["FriendsOnly"] = _G.Settings.FriendsOnly,
+                                    ["MapName"] = "Slime Dimension",
+                                    ["Hardcore"] = false
+                                }
+                            )
+                            game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction:InvokeServer(
+                                "TeleportPlayers"
+                            )
+                        end
+                        if Lvl > 120 then
+                            wait(1)
+                            game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction:InvokeServer(
+                                "CreateRoom",
+                                {
+                                    ["Difficulty"] = "Nightmare",
+                                    ["FriendsOnly"] = _G.Settings.FriendsOnly,
+                                    ["MapName"] = "Devil Dimension",
                                     ["Hardcore"] = false
                                 }
                             )
@@ -734,7 +782,24 @@ w:AddToggle(
                             "Gear 5 Luffy",
                             "Esper",
                             "Katakuri (Summer) Character",
-                            "Astolfo Summer Character"
+                            "Astolfo Summer Character",
+                            "Chainsaw",
+                            "Nardo (Beast)",
+                            "Cursed Sage",
+                            "Shadow Monarch",
+                            "Shadow Red Emperor",
+                            "Shadow Tengu",
+                            "Shadow Esper",
+                            "Shadow Infinity Nojo",
+                            "Shadow Ramura",
+                            "Shadow Esdeaf",
+                            "Shadow Yomiichi",
+                            "Shadow Combat Titan",
+                            "Ichlnl (Flnal)",
+                            "Control",
+                            "Blood Flend",
+                            "Prlmordlal",
+                            "Roku Ultra Instinct"
                         }
                         local Y = math.random(1, #X)
                         local Z = X[Y]
@@ -1879,8 +1944,8 @@ w:AddLabel("‼️ Auto Lvl + Raid + Boss Rush ")
 w:AddLabel("‼️ Specific + Raid + Boss Rush ")
 w:AddLabel("‼️ Trial + Raid + Boss Rush ")
 G:AddButton(
-    {Name = "Script by Sun Hub", Callback = function()
-            setclipboard("Sun Hub")
+    {Name = "Script by Jum Puk", Callback = function()
+            setclipboard("Jum Puk")
         end}
 )
 G:AddButton(
@@ -1897,5 +1962,5 @@ G:AddTextbox(
 
 G:AddLabel("LastestUpdate : 28/6/2022 ")
 
-u:MakeNotification({Name = "☀️ Sun Hub ☀️", Content = "Game: Anime Dimension", Time = 15})
+u:MakeNotification({Name = "☀️ Jum Puk ☀️", Content = "Game: Anime Dimension", Time = 15})
 u:Init()
