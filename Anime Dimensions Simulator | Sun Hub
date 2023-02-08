@@ -159,7 +159,7 @@ local q = {
 }
 local r = {"Easy", "Hard", "Nightmare", "Infinite"}
 local s = {"Capsule Series 1", "Raid Capsule", "Gear 5 Fluffy Capsule", "Esper Capsule"}
-local t = { "Tengoku Raid", "Hirito Raid", "Titan Raid", "Chainsaw Raid", "Nardo Beast Raid", "Cursed Sage Raid", "Christmas Raid", "Combat Titan Raid", "Infinity Nojo Raid", "Gear 5 Fluffy Raid", "Roku Ultra Instinct Raid", "Demon Lord Raid", "Red Emperor Raid", "Tengu Raid", "Yomiichi Raid"}
+local t = {"Titan Raid", "Nardo Beast Raid", "Combat Titan Raid", "Infinity Nojo Raid", "Gear 5 Fluffy Raid", "Roku Ultra Instinct Raid", "Demon Lord Raid", "Red Emperor Raid", "Tengu Raid", "Yomiichi Raid", "Ichini Fullbring Raid", "Vio Raid"}
 local u = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
 local v = u:MakeWindow({Name = "Hori Hub", HidePremium = true})
 local w = v:MakeTab({Name = "Main", PremiumOnly = false})
