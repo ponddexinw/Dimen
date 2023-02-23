@@ -143,6 +143,8 @@ local p = {
     "Combat Titan",
     "Tengu",
     "Red Emperor"
+    "Vio"
+    "Christmas Alter"
 
 }
 local q = {
@@ -1207,6 +1209,8 @@ w:AddToggle(
                             "Combat Titan",
                             "Tengu",
                             "Red Emperor"
+                            "Vio"
+                            "Christmas Alter"
                         }
                         local Y = math.random(1, #X)
                         local Z = X[Y]
