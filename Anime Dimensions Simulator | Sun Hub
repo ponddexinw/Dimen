@@ -157,7 +157,9 @@ local q = {
     "Ghoul Dimension",
     "Fate Dimension",
     "Slime Dimension",
-    "Devil Dimension"
+    "Devil Dimension",
+    "Pirate Dimension",
+    "Alien Dimension"
 }
 local r = {"Easy", "Hard", "Nightmare", "Infinite"}
 local s = {"Capsule Series 1", "Raid Capsule", "Gear 5 Fluffy Capsule", "Esper Capsule"}
@@ -491,7 +493,7 @@ w:AddToggle(
                                 "TeleportPlayers"
                             )
                         end
-                        if Lvl > 120 then
+                        if Lvl > 120 and Lv1 < 131 then
                             wait(1)
                             game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction:InvokeServer(
                                 "CreateRoom",
@@ -499,6 +501,36 @@ w:AddToggle(
                                     ["Difficulty"] = "Nightmare",
                                     ["FriendsOnly"] = _G.Settings.FriendsOnly,
                                     ["MapName"] = "Devil Dimension",
+                                    ["Hardcore"] = false
+                                }
+                            )
+                            game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction:InvokeServer(
+                                "TeleportPlayers"
+                            )
+                        end
+                        if Lvl > 130 and Lv1 < 141 then
+                            wait(1)
+                            game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction:InvokeServer(
+                                "CreateRoom",
+                                {
+                                    ["Difficulty"] = "Nightmare",
+                                    ["FriendsOnly"] = _G.Settings.FriendsOnly,
+                                    ["MapName"] = "Pirate Dimension",
+                                    ["Hardcore"] = false
+                                }
+                            )
+                            game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction:InvokeServer(
+                                "TeleportPlayers"
+                            )
+                        end
+                        if Lvl > 140 then
+                            wait(1)
+                            game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction:InvokeServer(
+                                "CreateRoom",
+                                {
+                                    ["Difficulty"] = "Nightmare",
+                                    ["FriendsOnly"] = _G.Settings.FriendsOnly,
+                                    ["MapName"] = "Alien Dimension",
                                     ["Hardcore"] = false
                                 }
                             )
